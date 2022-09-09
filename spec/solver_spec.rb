@@ -1,3 +1,4 @@
+require_relative '../solver'
 
 describe 'Test factorials, fizzbuzz and reverse string' do
   before(:each) do
@@ -14,8 +15,8 @@ describe 'Test factorials, fizzbuzz and reverse string' do
       expect(@solver.factorial(1)).to eq(1)
     end
   
-    it 'test the factorial of negative number to equal to 1' do
-      expect(@solver.factorial(-10)).to eq(1)
+    it 'test the factorial of negative number to equal to nil' do
+      expect(@solver.factorial(-10)).to eq(nil)
     end
   end
 
