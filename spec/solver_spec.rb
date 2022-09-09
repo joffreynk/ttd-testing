@@ -30,4 +30,19 @@ describe 'Test factorials, fizzbuzz and reverse string' do
       expect(@solver.reverse('test')).to eq('tset')
     end
   end
+
+  describe 'Testing fizzbuzz' do
+    it 'should return fizz for 3' do
+      expect(@solver.fizzbuzz(3)).to eq('fizz')
+    end
+    it 'should return buzz for 5' do
+      expect(@solver.fizzbuzz(5)).to eq('buzz')
+    end
+    it 'should return fizzbuzz for 15' do
+      expect(@solver.fizzbuzz(15)).to eq('fizzbuzz')
+    end
+    it 'should return 7 for 7' do
+      expect(@solver.fizzbuzz(7)).to eq(7)
+    end
+  end
 end
