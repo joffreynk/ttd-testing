@@ -14,7 +14,7 @@ describe 'Test factorials, fizzbuzz and reverse string' do
     it 'test the factorial of 1 which is equal to 1' do
       expect(@solver.factorial(1)).to eq(1)
     end
-  
+
     it 'test the factorial of negative number to equal to nil' do
       expect(@solver.factorial(-10)).to eq(nil)
     end
@@ -22,13 +22,13 @@ describe 'Test factorials, fizzbuzz and reverse string' do
 
   describe 'Testing reverse' do
     it 'hello should be reversed to be olleh' do
-      expect(@solver.reverse_string('hello')).to eq('olleh')
+      expect(@solver.reverse('hello')).to eq('olleh')
     end
     it 'good should be reversed to be doog' do
-      expect(@solver.reverse_string('good')).to eq('doog')
+      expect(@solver.reverse('good')).to eq('doog')
     end
     it 'test should be reversed to be tset' do
-      expect(@solver.reverse_string('test')).to eq('tset')
+      expect(@solver.reverse('test')).to eq('tset')
     end
   end
 

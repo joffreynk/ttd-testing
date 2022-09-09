@@ -1,27 +1,24 @@
 class Solver
   def factorial(number)
-    if number < 0
-      return nil
-    end
-    if number == 0
-      return 1
-    end
-    number*factorial(number-1)
+    return nil if number.negative?
+    return 1 if number.zero?
+
+    number * factorial(number - 1)
+  end
+
+  def reverse(string)
+    string.reverse
   end
 
   def fizzbuzz(num)
     if (num % 5).zero? && (num % 3).zero?
-      return 'fizzbuzz'
+      'fizzbuzz'
     elsif (num % 5).zero?
-      return 'buzz'
+      'buzz'
     elsif (num % 3).zero?
-      return 'fizz'
+      'fizz'
     else
-      return num
-    end
-
-    def reverse_string(word)
-      word.reverse
+      num
     end
   end
 end
