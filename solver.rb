@@ -1,5 +1,3 @@
-
-
 class Solver
   def factorial(number)
     if number < 0
@@ -21,4 +19,9 @@ class Solver
     else
       return num
     end
+
+    def reverse_string(word)
+      word.reverse
+    end
+  end
 end
