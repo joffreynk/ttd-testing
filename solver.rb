@@ -1,3 +1,5 @@
+
+
 class Solver
   def factorial(number)
     if number < 0
@@ -8,4 +10,15 @@ class Solver
     end
     number*factorial(number-1)
   end
+
+  def fizzbuzz(num)
+    if (num % 5).zero? && (num % 3).zero?
+      return 'fizzbuzz'
+    elsif (num % 5).zero?
+      return 'buzz'
+    elsif (num % 3).zero?
+      return 'fizz'
+    else
+      return num
+    end
 end
