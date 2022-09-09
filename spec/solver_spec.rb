@@ -18,4 +18,16 @@ describe 'Test factorials, fizzbuzz and reverse string' do
       expect(@solver.factorial(-10)).to eq(1)
     end
   end
+
+  describe 'Testing reverse' do
+    it 'hello should be reversed to be olleh' do
+      expect(@solver.reverse('hello')).to eq('olleh')
+    end
+    it 'good should be reversed to be doog' do
+      expect(@solver.reverse('good')).to eq('doog')
+    end
+    it 'test should be reversed to be tset' do
+      expect(@solver.reverse('test')).to eq('tset')
+    end
+  end
 end
